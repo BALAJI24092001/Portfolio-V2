@@ -1,0 +1,50 @@
+*{
+    height: 100%;
+    background-color: black;
+}
+body{
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-gap: 0;
+}
+#leftNavigationDiv{
+    width: 20v;
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-column-start:  1;
+    grid-column-end: 2;
+    position: fixed;
+    overflow:visible;
+}
+#leftNavigationDiv div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#leftNavigationDiv div a{
+    width: fit-content;
+    height: fit-content;
+    transform: rotate(-90deg);
+    text-decoration: none;
+    color: white;
+}
+#mainBodyDiv{
+    grid-column-start: 2;
+    grid-column-end: 3  ;
+    grid-template-columns: 10% auto;
+}
+#mainBodyDiv div{
+    height: 100%;
+    margin: 0;
+    color: white;
+}  
+#HOME{
+    background-color: rgb(7, 7, 165);
+} 
+#RESUME{
+    background-color: burlywood;
+}
+#SKILLS{
+    background-color: coral;
+}
