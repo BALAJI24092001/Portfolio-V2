@@ -21,13 +21,12 @@ body{
     grid-column-start:  1;
     grid-column-end: 2;
     position: fixed;
-    overflow:visible;
 }
 #leftNavigationDiv div{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(230, 228, 228);
 }
 #leftNavigationDiv div a{
     width: fit-content;
@@ -37,6 +36,8 @@ body{
     font-size: 20px;
     color: black;
     font-weight: 900;
+    background-color: rgb(230, 228, 228);
+
 }
 #mainBodyDiv{
     grid-column-start: 2;
@@ -46,13 +47,14 @@ body{
 #mainBodyDiv div{
     height: 100%;
     margin: 0;
-    color: white;
 }  
 #HOME{
-    background-color: rgb(152, 152, 211);
+    background-color: white;
+    color: black;
 } 
 #RESUME{
-    background-color: rgb(204, 171, 128);
+    background-color: rgb(126, 126, 126);
+    color:  white;
 }
 #SKILLS{
     background-color: rgb(211, 155, 134);
@@ -61,5 +63,6 @@ body{
     background-color: teal;
 }
 #MEET{
-    background-color: wheat;
+    background-color: rgb(53, 73, 55);
+    color: white;
 }
