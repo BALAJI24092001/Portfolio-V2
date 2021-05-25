@@ -28,6 +28,9 @@ body{
     align-items: center;
     background-color: rgb(230, 228, 228);
 }
+#leftNavigationDiv div:hover{
+    background-color: thistle;
+}
 #leftNavigationDiv div a{
     width: fit-content;
     height: fit-content;
@@ -36,7 +39,7 @@ body{
     font-size: 20px;
     color: black;
     font-weight: 900;
-    background-color: rgb(230, 228, 228);
+    background-color: transparent;
 
 }
 #mainBodyDiv{
