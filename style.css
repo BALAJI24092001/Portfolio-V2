@@ -2,6 +2,7 @@
     height: 100%;
     background-color: white;
     font-family: Courier, monospace;
+    background-color: transparent;
 }
 html{
     margin: 0;
@@ -36,7 +37,7 @@ body{
     height: fit-content;
     transform: rotate(-90deg);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 21px;
     color: black;
     font-weight: 900;
     background-color: transparent;
@@ -46,18 +47,43 @@ body{
     grid-column-start: 2;
     grid-column-end: 3  ;
     grid-template-columns: 10% auto;
+    background-color: transparent;
 }
 #mainBodyDiv div{
     height: 100%;
+    background-color: transparent;
     margin: 0;
 }  
 #HOME{
-    background-color: white;
-    color: black;
-} 
+    background-image: url(images/homeBackgroundImageOptionThree.jpg);
+    background-size:cover;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#HOME div{
+    width: 60%;
+    margin: 0;
+    height: fit-content;
+    align-content: center;
+    padding: 0;
+    color: white;
+    font-weight: 900;
+    background-color: transparent;
+    
+}
+#HOME h1{
+    margin: 0 ;
+    width: 100%;
+    font-size: 40px;
+}
+
 #RESUME{
     background-color: rgb(126, 126, 126);
-    color:  white;
+    color:  black;
+    z-index: 2;
 }
 #SKILLS{
     background-color: rgb(211, 155, 134);
@@ -68,4 +94,16 @@ body{
 #MEET{
     background-color: rgb(53, 73, 55);
     color: white;
+}
+@media screen and (max-width: 450px) {
+    #HOME div{
+        width: 95%;
+    }
+    #HOME div p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    #HOME div h1 {
+        font-size: 25px;
+    }
 }
