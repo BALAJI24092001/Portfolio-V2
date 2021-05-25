@@ -47,17 +47,16 @@ body{
     grid-column-start: 2;
     grid-column-end: 3  ;
     grid-template-columns: 10% auto;
-    background-color: transparent;
 }
 #mainBodyDiv div{
     height: 100%;
-    background-color: transparent;
+    /* background-color: transparent; */
     margin: 0;
 }  
 #HOME{
-    background-image: url(images/homeBackgroundImageOptionTwo.jfif);
+    /* background-image: url(images/homeBackgroundImageOptionTwo.jfif); */
     background-size:cover;
-    background-color: transparent;
+    background-color: rgb(185, 85, 85);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +73,7 @@ body{
     background-color: transparent;
     
 }
-#HOME h1{
+#HOME h1, h2{
     margin: 0 ;
     width: 100%;
     font-size: 40px;
@@ -84,6 +83,7 @@ body{
     background-color: rgb(126, 126, 126);
     color:  black;
     z-index: 2;
+    margin: 0;
 }
 #SKILLS{
     background-color: rgb(211, 155, 134);
