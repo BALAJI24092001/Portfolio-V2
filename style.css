@@ -31,7 +31,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(230, 228, 228);
+    background-color: #4A8FE7;
 }
 #leftNavigationDiv div:hover{
     background-color: thistle;
@@ -47,6 +47,9 @@ body{
     background-color: transparent;
 
 }
+#leftNavigationDiv div a sup {
+    font-size: 12px;
+}
 #mainBodyDiv{
     grid-column-start: 2;
     grid-column-end: 3  ;
@@ -61,11 +64,17 @@ body #mainBodyDiv #HOME{
     /* background-image: url(images/homeBackgroundImageOptionTwo.jfif); */
     background-size:cover;
     height: 100%;
-    background-color: rgb(170, 72, 72);
+    background-color: #59D2FE;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://thumbs.gfycat.com/FavorableAstonishingKestrel-size_restricted.gif);
+    /* background-image: url(https://www.freepnglogos.com/uploads/bubbles-png/bubbles-hodge-3.png); */
 }
 #HOME div{
     width: 60%;
@@ -81,48 +90,31 @@ body #mainBodyDiv #HOME{
 #HOME h1{
     margin: 0 ;
     width: 100%;
-    font-size: 40px;
+    font-size: 60px;
     
+}
+#HOME p{
+    font-size: 20px;
+    margin: 8px;
+    padding: 5px;
+    word-spacing: 8px;
 }
 h2{
 margin: 0;
 }
-#RESUME{
-    background-color: teal;
-    color:  black;
-    z-index: 2;
-    margin: 0;
-}
+
 #SKILLS{
-    background-color: rgb(211, 155, 134);
+    background-color:#73FBD3;
 }
 #CONTACT{
-    background-color: rgb(66, 116, 116);
+    background-color:  #00B4F5;
 }
 #MEET{
-    background-color: rgb(135, 156, 184);
+    background-color: #C9DEF8;
     color: white;
     font-weight: 700;
 }
-#RESUME{
-    display: grid;
-    color: white;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:  1fr 3.5fr 3.5fr;
-}
-#RESUME .box{
-    width: 100%;
-    height: 100%;
-}
-#RESUME .div0{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#RESUME .div1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
+
 @media screen and (max-width: 450px) {
     #HOME div{
         width: 95%;
