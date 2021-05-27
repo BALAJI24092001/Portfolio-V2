@@ -73,7 +73,7 @@ body #mainBodyDiv #HOME{
     /* background-size: contain; */
     background-position: center;
     background-size: cover;
-    background-image: url(https://thumbs.gfycat.com/FavorableAstonishingKestrel-size_restricted.gif);
+    background-image: url(Images/gifs/cityGif.gif);
     /* background-image: url(https://www.freepnglogos.com/uploads/bubbles-png/bubbles-hodge-3.png); */
 }
 #HOME div{
@@ -105,14 +105,27 @@ margin: 0;
 
 #SKILLS{
     background-color:#73FBD3;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: center;
+    background-size: cover;
+    background-image: url(Images/gifs/nightForestGif.gif);
+    
 }
 #CONTACT{
     background-color:  #00B4F5;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://wallpaperaccess.com/full/2825710.gif);
+    
 }
 #MEET{
     background-color: #C9DEF8;
     color: white;
     font-weight: 700;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Images/gifs/waterWavesGif.gif);
 }
 
 @media screen and (max-width: 450px) {
