@@ -61,6 +61,14 @@ body #mainBodyDiv #HOME{
     /* background-image: url(images/homeBackgroundImageOptionTwo.jfif); */
     background-size:cover;
     /* height: 100%; */
+}
+#mainBodyDiv div{
+    height: 80%;
+    /* background-color: transparent; */
+    margin: 0;
+}  
+body #mainBodyDiv #HOME{
+    /* background-image: url(images/homeBackgroundImageOptionTwo.jfif); */
     background-color: #59D2FE;
     display: flex;
     justify-content: center;
@@ -198,18 +206,27 @@ margin: 0;
     background-size: cover;
     background-image: url(Images/gifs/waterWavesGif.gif);
 }
-
 @media screen and (max-width: 450px) {
+
     #HOME div{
         width: 95%;
         padding-left: 25px;
+    #mainBodyDiv div{
+        height: 55%;
+    }
+    #mainBodyDiv #HOME div{
+        width: 80%;
     }
     #HOME div p{
         font-size: 15px;
         font-weight: 400;
+        width: fit-content;
+        height: fit-content;
     }
     #HOME div h1 {
         font-size: 25px;
+        height: fit-content;
+        width: fit-content;
     }
     #SKILLS .skillsDiv{
         grid-column-end: 3;
@@ -218,7 +235,8 @@ margin: 0;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        width: 90%;
+        justify-content: space-between;
         margin-top: 80px;
         /* grid-gap: 45px; */
     }
