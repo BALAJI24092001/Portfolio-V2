@@ -56,14 +56,12 @@ body{
     grid-template-columns: 10% auto;
 }
 #mainBodyDiv div{
-    height: 100%;
+    height: 80%;
     /* background-color: transparent; */
     margin: 0;
 }  
 body #mainBodyDiv #HOME{
     /* background-image: url(images/homeBackgroundImageOptionTwo.jfif); */
-    background-size:cover;
-    height: 100%;
     background-color: #59D2FE;
     display: flex;
     justify-content: center;
