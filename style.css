@@ -12,9 +12,9 @@ html{
     padding: 0;
 }
 body{
-    /* display: grid; */
+    display: grid;
     grid-template-columns: 6% auto;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 100% ;
     /* height: 100%; */
     grid-gap: 0;
     margin: 0;
@@ -56,12 +56,7 @@ body{
     grid-column-end: 3  ;
     grid-template-columns: 10% auto;
     grid-template-rows: 100%;
-}
-#mainBodyDiv div{
-    /* height: 100%; */
-    /* background-color: transparent; */
-    margin: 0;
-}  
+} 
 body #mainBodyDiv #HOME{
     /* background-image: url(images/homeBackgroundImageOptionTwo.jfif); */
     background-size:cover;
