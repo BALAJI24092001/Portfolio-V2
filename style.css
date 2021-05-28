@@ -1,232 +1,249 @@
-*{
-    height: 100%;
-    background-color: white;
-    font-family: Courier, monospace;
-    background-color: transparent;
+* {
+  height: 100%;
+  background-color: white;
+  font-family: Courier, monospace;
+  background-color: transparent;
 }
-h1, h2, h3 {
-    height: fit-content;
+h1,
+h2,
+h3 {
+  height: fit-content;
 }
-html{
-    margin: 0;
-    padding: 0;
+html {
+  margin: 0;
+  padding: 0;
 }
-body{
-    display: grid;
-    grid-template-columns: 6% auto;
-    grid-template-rows: 100%;
-    height: 100%;
-    grid-gap: 0;
-    margin: 0;
-    padding: 0;
+body {
+  display: grid;
+  grid-template-columns: 6% auto;
+  grid-template-rows: 100%;
+  height: 100%;
+  grid-gap: 0;
+  margin: 0;
+  padding: 0;
 }
-#leftNavigationDiv{
-    width: 6%;
-    display: grid;
-    grid-template-columns: 100%; 
-    grid-column-start:  1;
-    grid-column-end: 2;
-    position: fixed;
+#leftNavigationDiv {
+  width: 6%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  position: fixed;
 }
-#leftNavigationDiv div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4A8FE7;
+#leftNavigationDiv div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a8fe7;
 }
-#leftNavigationDiv div:hover{
-    background-color: thistle;
+#leftNavigationDiv div:hover {
+  background-color: thistle;
 }
-#leftNavigationDiv div a{
-    width: fit-content;
-    height: fit-content;
-    transform: rotate(-90deg);
-    text-decoration: none;
-    font-size: 21px;
-    color: black;
-    font-weight: 900;
-    background-color: transparent;
-
+#leftNavigationDiv div a {
+  width: fit-content;
+  height: fit-content;
+  transform: rotate(-90deg);
+  text-decoration: none;
+  font-size: 21px;
+  color: black;
+  font-weight: 900;
+  background-color: transparent;
 }
 #leftNavigationDiv div a sup {
-    font-size: 12px;
+  font-size: 12px;
 }
-#mainBodyDiv{
-    grid-column-start: 2;
-    grid-column-end: 3  ;
-    grid-template-columns: 10% auto;
+#mainBodyDiv {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-template-columns: 10% auto;
 }
-#mainBodyDiv div{
-    height: 100%;
-    /* background-color: transparent; */
-    margin: 0;
-}  
-body #mainBodyDiv #HOME{
-    /* background-image: url(images/homeBackgroundImageOptionTwo.jfif); */
-    background-size:cover;
-    height: 100%;
-    background-color: #59D2FE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-repeat: no-repeat;
-    /* background-size: contain; */
-    background-position: center;
-    background-size: cover;
-    background-image: url(Images/gifs/cityGif.gif);
-    /* background-image: url(https://www.freepnglogos.com/uploads/bubbles-png/bubbles-hodge-3.png); */
+#mainBodyDiv div {
+  height: 100%;
+  /* background-color: transparent; */
+  margin: 0;
 }
-#HOME div{
-    width: 60%;
-    margin: 0;
+body #mainBodyDiv #HOME {
+  /* background-image: url(images/homeBackgroundImageOptionTwo.jfif); */
+  background-size: cover;
+  height: 100%;
+  background-color: #59d2fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: center;
+  background-size: cover;
+  background-image: url(Images/gifs/cityGif.gif);
+  /* background-image: url(https://www.freepnglogos.com/uploads/bubbles-png/bubbles-hodge-3.png); */
+}
+#HOME div {
+  width: 60%;
+  margin: 0;
+  height: fit-content;
+  align-content: center;
+  padding: 0;
+  color: white;
+  font-weight: 900;
+  background-color: transparent;
+}
+#HOME h1 {
+  margin: 0;
+  width: 100%;
+  font-size: 60px;
+}
+#HOME p {
+  font-size: 20px;
+  margin: 8px;
+  padding: 5px;
+  word-spacing: 8px;
+}
+h2 {
+  margin: 0;
+}
+#SKILLS {
+  background-color: #73fbd3;
+  background-repeat: no-repeat;
+  color: white;
+  /* background-size: contain; */
+  background-position: center;
+  background-size: cover;
+  background-image: url(Images/gifs/nightForestGif.gif);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+}
+#SKILLS .skillsDiv {
+  grid-column-end: 3;
+  grid-column-start: 2;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+#mainBodyDiv #SKILLS .skillsDiv div {
+  height: fit-content;
+}
+#mainBodyDiv #SKILLS .skillsDiv div ul {
+  width: fit-content;
+  height: fit-content;
+  color: white;
+}
+#SKILLS li {
+  width: fit-content;
+  height: fit-content;
+}
+#CONTACT {
+  background-color: #00b4f5;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(https://wallpaperaccess.com/full/2825710.gif);
+}
+#CONTACT .contactBox {
+  margin-top: 100px;
+  border: 3px solid white;
+  height: fit-content;
+  width: fit-content;
+  padding: 25px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  box-shadow: inset 6px 6px 6px #0d1e36, inset -6px -6px 6px #8e9aaa;
+}
+::placeholder {
+  color: wheat;
+}
+#CONTACT .contactBox h3 {
+  color: white;
+  font-weight: 900;
+  opacity: 1;
+  background-color: transparent(90%);
+  margin-bottom: 0px;
+}
+#CONTACT .contactBox form {
+  height: fit-content;
+}
+#CONTACT .contactBox input {
+  height: fit-content;
+  background-color: rgb(187, 129, 129);
+  color: white;
+  margin-top: 15px;
+  border: 2px solid white;
+}
+#CONTACT .contactBox textarea {
+  background-color: rgb(187, 129, 129);
+  border: 2px solid white;
+  margin-top: 15px;
+}
+#CONTACT .contactBox button {
+  background-color: rgb(63, 117, 70);
+  width: 205px;
+  margin-left: 32px;
+  color: white;
+  margin-top: 15px;
+}
+#MEET {
+  background-color: #c9def8;
+  color: white;
+  font-weight: 700;
+  background-position: center;
+  background-size: cover;
+  background-image: url(Images/gifs/waterWavesGif.gif);
+}
+#MEET div{
+    width: fit-content;
     height: fit-content;
-    align-content: center;
-    padding: 0;
+    padding-top: 150px;
+    padding-left: 200px;
+}
+#MEET div a{
     color: white;
-    font-weight: 900;
-    background-color: transparent;
-    
+    text-decoration: none;
+    font-weight: 100;
 }
-#HOME h1{
-    margin: 0 ;
-    width: 100%;
-    font-size: 60px;
-    
+#MEET div a:hover{
+    font-weight: 200;
+    color: wheat;
 }
-#HOME p{
-    font-size: 20px;
-    margin: 8px;
-    padding: 5px;
-    word-spacing: 8px;
-}
-h2{
-margin: 0;
-}
-#SKILLS{
-    background-color:#73FBD3;
-    background-repeat: no-repeat;
-    color: white;
-    /* background-size: contain; */
-    background-position: center;
-    background-size: cover;
-    background-image: url(Images/gifs/nightForestGif.gif);
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
-    
-}
-#SKILLS .skillsDiv{
+
+@media screen and (max-width: 450px) {
+  #HOME div {
+    width: 95%;
+    /* height: 100%; */
+  }
+  #HOME div p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  #HOME div h1 {
+    font-size: 25px;
+  }
+  #SKILLS .skillsDiv {
     grid-column-end: 3;
-    grid-column-start: 2;
+    grid-column-start: 1;
     height: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    width: 90%;
+    justify-content: space-between;
     margin-top: 80px;
-    
-}
-#mainBodyDiv #SKILLS .skillsDiv div{
+    /* grid-gap: 45px; */
+  }
+  #mainBodyDiv #SKILLS .skillsDiv div {
     height: fit-content;
-}
-#mainBodyDiv #SKILLS .skillsDiv div ul{
+    margin-top: 55px;
+  }
+  #MEET div{
     width: fit-content;
     height: fit-content;
-    color: white;
+    padding-top: 150px;
+    padding-left: 40px;
 }
-#SKILLS li{
-    width: fit-content;
-    height: fit-content;
-}
-#CONTACT{
-    background-color:  #00B4F5;
-    color: white;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: url(https://wallpaperaccess.com/full/2825710.gif);
-}
-#CONTACT .contactBox{
-    margin-top: 100px;
-    border: 3px solid white;
-    height: fit-content;
-    width: fit-content;
-    padding: 25px;
-    border-radius: 5px;
-    backface-visibility: hidden;
-    box-shadow: inset 6px 6px 6px #0d1e36, inset -6px -6px 6px #8e9aaa;
-
-}
-::placeholder{
-    color: wheat;
-}
-#CONTACT .contactBox h3{
-    color: white;
-    font-weight: 900;
-    opacity:1;
-    background-color: transparent(90%);
-    margin-bottom: 0px;
-}
-#CONTACT .contactBox form{
-    height: fit-content;
-}
-#CONTACT .contactBox input{
-    height: fit-content;
-    background-color:rgb(187, 129, 129);
-    color: white;
-    margin-top: 15px;
-    border: 2px solid white;
-}
-#CONTACT .contactBox textarea{
-    background-color:rgb(187, 129, 129);
-    border: 2px solid white;
-    margin-top:15px;
-}
-#CONTACT .contactBox button{
-    background-color: rgb(63, 117, 70);
-    width: 205px;
-    margin-left: 32px;
-    color: white;
-    margin-top: 15px;
-}
-#MEET{
-    background-color: #C9DEF8;
-    color: white;
-    font-weight: 700;
-    background-position: center;
-    background-size: cover;
-    background-image: url(Images/gifs/waterWavesGif.gif);
-}   
-
-@media screen and (max-width: 450px) {
-    #HOME div{
-        width: 95%;
-        /* height: 100%; */
-    }
-    #HOME div p{
-        font-size: 15px;
-        font-weight: 400;
-    }
-    #HOME div h1 {
-        font-size: 25px;
-    }
-    #SKILLS .skillsDiv{
-        grid-column-end: 3;
-        grid-column-start: 1;
-        height: fit-content;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 90%;
-        justify-content: space-between;
-        margin-top: 80px;
-        /* grid-gap: 45px; */
-    }
-    #mainBodyDiv #SKILLS .skillsDiv div{
-        height: fit-content;
-        margin-top: 55px;
-    }
 }
