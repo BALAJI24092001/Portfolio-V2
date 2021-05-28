@@ -106,18 +106,91 @@ margin: 0;
 #SKILLS{
     background-color:#73FBD3;
     background-repeat: no-repeat;
+    color: white;
     /* background-size: contain; */
     background-position: center;
     background-size: cover;
     background-image: url(Images/gifs/nightForestGif.gif);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
     
+}
+#SKILLS .skillsDiv{
+    grid-column-end: 3;
+    grid-column-start: 2;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 80px;
+    
+}
+#mainBodyDiv #SKILLS .skillsDiv div{
+    height: fit-content;
+}
+#mainBodyDiv #SKILLS .skillsDiv div ul{
+    width: fit-content;
+    height: fit-content;
+    color: white;
+}
+#SKILLS li{
+    width: fit-content;
+    height: fit-content;
 }
 #CONTACT{
     background-color:  #00B4F5;
+    color: white;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     background-image: url(https://wallpaperaccess.com/full/2825710.gif);
-    
+}
+#CONTACT .contactBox{
+    margin-top: 100px;
+    border: 3px solid white;
+    height: fit-content;
+    width: fit-content;
+    padding: 25px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: inset 6px 6px 6px #0d1e36, inset -6px -6px 6px #8e9aaa;
+
+}
+::placeholder{
+    color: wheat;
+}
+#CONTACT .contactBox h3{
+    color: white;
+    font-weight: 900;
+    opacity:1;
+    background-color: transparent(90%);
+    margin-bottom: 0px;
+}
+#CONTACT .contactBox form{
+    height: fit-content;
+}
+#CONTACT .contactBox input{
+    height: fit-content;
+    background-color:rgb(187, 129, 129);
+    color: white;
+    margin-top: 15px;
+    border: 2px solid white;
+}
+#CONTACT .contactBox textarea{
+    background-color:rgb(187, 129, 129);
+    border: 2px solid white;
+    margin-top:15px;
+}
+#CONTACT .contactBox button{
+    background-color: rgb(63, 117, 70);
+    width: 205px;
+    margin-left: 32px;
+    color: white;
+    margin-top: 15px;
 }
 #MEET{
     background-color: #C9DEF8;
@@ -138,5 +211,20 @@ margin: 0;
     }
     #HOME div h1 {
         font-size: 25px;
+    }
+    #SKILLS .skillsDiv{
+        grid-column-end: 3;
+        grid-column-start: 1;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 80px;
+        /* grid-gap: 45px; */
+    }
+    #mainBodyDiv #SKILLS .skillsDiv div{
+        height: fit-content;
+        margin-top: 55px;
     }
 }
